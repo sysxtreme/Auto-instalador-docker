@@ -19,7 +19,7 @@ read -p "Digite o e-mail para uso no Letsencrypt [padrão: user@example.com]: " 
 
 # Atualizando pacotes e instalando dependências
 echo "⚙️ Atualizando pacotes e instalando dependências no sistema..."
-sudo apt-get update && apt-get install -y apparmor-utils curl && echo "✅ Pacotes atualizados e dependências instaladas." || { echo "❌ Erro ao atualizar pacotes ou instalar dependências"; exit 1; }
+sudo apt-get update && sudo apt-get install -y apparmor-utils curl && echo "✅ Pacotes atualizados e dependências instaladas." || { echo "❌ Erro ao atualizar pacotes ou instalar dependências"; exit 1; }
 
 # Verificando se o Docker já está instalado antes de tentar instalar
 if ! command -v docker &> /dev/null; then

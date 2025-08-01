@@ -49,7 +49,7 @@ services:
         - "traefik.http.routers.dashboard-html-https.tls.certresolver=letsencrypt"
         - "traefik.http.routers.dashboard-https.middlewares=dashboard-auth"
         # Basic auth middleware
-        - "traefik.http.middlewares.dashboard-auth.basicauth.users=admin:$$apr1$$Kek1bDZu$$Dt2YfbNt5Y/qIarvqtPrs1"
+        - "traefik.http.middlewares.dashboard-auth.basicauth.users=admin:$$apr1$$d.fYrZsU$$MjCUMzN4bachTVT6zahww1"
         # Required dummy-svc label
         - "traefik.http.services.dummy-svc.loadbalancer.server.port=9999"
     volumes:
